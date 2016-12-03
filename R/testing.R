@@ -1,9 +1,12 @@
-source("functions.R")
+source("./R/functions.R")
 
-cpt <- load_CPT(name = "./data/FMW-CPT.csv")
-mip <- load_MIP(name = "./data/FMW-MIP.csv")
+# cpt <- load_CPT(name = "./data/FMW-CPT.csv")
+# mip <- load_MIP(name = "./data/FMW-MIP.csv")
+#
+# bm <- load_bm(name = "./data/shapefile/_Selected_Parcels_NAD27.shp", layer = "_Selected_Parcels_NAD27")
+# save(cpt, mip, bm, file = "./data/xs_data.RData")
 
-bm <- load_bm(name = "./data/shapefile/_Selected_Parcels_NAD27.shp", layer = "_Selected_Parcels_NAD27")
+load("./data/xs_data.RData")
 
 map <- plot_bm(bm)
 # siteb_limits <- subset_bm(bm)
